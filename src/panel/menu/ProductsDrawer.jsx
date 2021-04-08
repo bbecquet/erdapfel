@@ -43,7 +43,7 @@ const ProductsDrawer = () => {
         />
       </div>
       <a
-        href="https://qwant.com/?drawer=awareness"
+        href="https://about.qwant.com"
         target="_blank"
         rel="noopener noreferrer"
         className="card u-mb-l"
