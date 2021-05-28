@@ -1,10 +1,11 @@
+/* global _ */
 import React from 'react';
 import { Flex } from 'src/components/ui';
 import { useI18n } from 'src/hooks';
 import ProductCard from './ProductCard';
 
 const ProductsDrawer = () => {
-  const { getLocalizedUrl, _ } = useI18n();
+  const { getLocalizedUrl } = useI18n();
 
   return (
     <>

@@ -1,3 +1,4 @@
+/* global _ */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Flex, Text, Meter } from 'src/components/ui';
@@ -5,7 +6,7 @@ import { GREEN_BASE, ORANGE_BASE, RED_BASE } from 'src/libs/colors';
 import { useI18n } from 'src/hooks';
 
 const Container = ({ type, filling_level, updated_at }) => {
-  const { locale, _ } = useI18n();
+  const { locale } = useI18n();
 
   const containerTypes = type => {
     return (

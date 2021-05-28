@@ -1,3 +1,4 @@
+/* global _ */
 import React, { useState } from 'react';
 import Alert from './ui/Alert';
 import { Button } from './ui';
@@ -15,7 +16,7 @@ const BetaInfoBox = () => {
     set('beta_popup_closed', 1);
     setClosed(true);
   };
-  const { lang, _ } = useI18n();
+  const { lang } = useI18n();
 
   return (
     // Show beta popup if browser language is not french, if popup hasn't already been closed, and if the user comes from an IA

@@ -1,3 +1,4 @@
+/* global _ */
 import React from 'react';
 import PropTypes from 'prop-types';
 import MenuItem from './MenuItem';
@@ -9,7 +10,7 @@ import { useConfig, useI18n } from 'src/hooks';
 
 const AppMenu = ({ close, openProducts }) => {
   const { baseUrl } = useConfig('system');
-  const { getLocalizedUrl, _ } = useI18n();
+  const { getLocalizedUrl } = useI18n();
 
   const navTo = (url, options) => {
     close();

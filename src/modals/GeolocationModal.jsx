@@ -1,3 +1,4 @@
+/* global _ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'src/components/ui/Modal';
@@ -9,7 +10,7 @@ import { useI18n } from 'src/hooks';
 let hasPermissionModalOpenedOnce = false;
 
 const GeolocationModal = ({ status, onClose, onAccept }) => {
-  const { getLocalizedUrl, _ } = useI18n();
+  const { getLocalizedUrl } = useI18n();
   const aboutPrivacyUrl = getLocalizedUrl('aboutPrivacy');
 
   /* eslint-disable max-len */
